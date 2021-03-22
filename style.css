@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body {
+  background-color: rgb(243, 244, 245);
+  margin:0;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+ width: 100%;
+ padding-right: 15px;
+ padding-left: 15px;
+ margin-right: auto;
+ margin-left: auto;
+}
+
+nav .menu ul {
+  position: fixed;
+  overflow:hidden;
+  color:#fff;
+  list-style: none;
+  padding:0;
+  width: 650px;
+  margin:0 0 0;
+  width: 100%;
+  background-color: #007bff;
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+  -moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+  box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+nav .menu ul li {
+  margin:0;
+  /* float:left; */
+}
+
+nav .menu ul a {
+  padding:25px;
+  display:block;
+  font-weight:600;
+  font-size: 16px;
+  color:#fff;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+
+nav .menu ul a:hover {
+  text-decoration: underline;
+  background:#0045aa;
+}
+
+.jumbotron {
+  padding-top: 4.3rem;
+  height: 100vh;
+  background-color: #e2edff;
+}
+
+.jumbotron img {
+  width: 12rem;
+  margin-top: 5rem;
+  border-radius: 9999px;
+}
+
+.jumbotron h2, .jumbotron h3 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  color: #bbb;
+}
+
+.jumbotron h2 {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.jumbotron h3 {
+  font-size: 1.1rem;
+  margin-bottom: 4rem;
+}
+
+section {
+  min-height: 800px;
+}
+
+#projects svg {
+  margin-top: -13%;
+}
+
+section#projects {
+  background-color: #fff;
+}
+
+section#projects .container {
+  padding: 0 0;
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  justify-items: center;
+}
+
+section#projects center h1 {
+  font-size: 2em;
+}
+
+.project-tile{
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-tile img{
+  width: 250px;
+}
+
+body svg#foot {
+  margin-top: -50%;
+}
+
+@media screen and (max-width: 960px) {
+  nav .menu ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  nav .menu ul li {
+    margin: 0;
+  }
+
+  nav .menu ul a {
+    display: flex;
+    justify-content: center;
+    padding:15px;
+    font-size: 16px;
+    border-bottom:1px solid #001bff;
+  }
+  section#projects .container {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+}
+
+@media screen and (max-width: 460px) {
+  section#projects .container {
+    grid-template-columns: repeat(1,minmax(0,1fr));
+  }
+}
