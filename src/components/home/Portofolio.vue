@@ -1,10 +1,13 @@
 <script>
 import Pagination from "../layouts/Pagination.vue";
+import Loader from "../Loader.vue";
 
 export default {
   data() {
     return {
       projects: [],
+
+      isLoading: false,
     };
   },
   mounted() {
@@ -12,19 +15,23 @@ export default {
   },
   methods: {
     getProjects() {
+      this.isLoading = true;
+
       const params = [`per_page=3`, `page=1`].join("&");
 
       this.$store
         .dispatch("getData", ["project", params])
         .then((response) => {
+          this.isLoading = false;
           this.projects = response.data;
         })
         .catch((error) => {
+          this.isLoading = false;
           console.log(error);
         });
     },
   },
-  components: { Pagination },
+  components: { Pagination, Loader },
 };
 </script>
 <template>
@@ -53,6 +60,7 @@ export default {
       <div
         class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12"
       >
+        <Loader v-if="isLoading" />
         <div
           class="mb-12 rounded-lg px-4 shadow-lg md:w-1/3"
           v-for="(project, index) in projects"

@@ -1,5 +1,7 @@
 <script>
-export default {};
+import CloudShapeIcon from "../icons/CloudShape.vue";
+
+export default { components: { CloudShapeIcon } };
 </script>
 <template>
   <!-- Hero Section -->
@@ -44,18 +46,7 @@ export default {};
             <span
               class="absolute bottom-0 left-1/2 top-10 -translate-x-1/2 md:scale-125"
             >
-              <svg
-                height="300"
-                width="300"
-                viewBox="0 0 200 200"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill="#10b981"
-                  d="M38.8,-62.8C48.5,-61.6,53.4,-47.6,62.5,-35C71.6,-22.4,84.9,-11.2,81.6,-1.9C78.2,7.3,58.2,14.7,47.6,24.6C36.9,34.6,35.7,47.2,29.4,52.2C23,57.1,11.5,54.3,0.4,53.6C-10.7,52.9,-21.4,54.3,-34.9,53.5C-48.4,52.7,-64.7,49.7,-72.2,40.5C-79.7,31.2,-78.3,15.6,-76.5,1C-74.8,-13.6,-72.7,-27.2,-63.5,-33.6C-54.4,-40,-38.3,-39.2,-26.5,-39.2C-14.8,-39.2,-7.4,-40.1,3.6,-46.3C14.5,-52.5,29.1,-64,38.8,-62.8Z"
-                  transform="translate(100 100)"
-                />
-              </svg>
+              <CloudShapeIcon />
             </span>
           </div>
         </div>
