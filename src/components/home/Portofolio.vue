@@ -1,6 +1,31 @@
 <script>
 import Pagination from "../layouts/Pagination.vue";
-export default { components: { Pagination } };
+
+export default {
+  data() {
+    return {
+      projects: [],
+    };
+  },
+  mounted() {
+    this.getProjects();
+  },
+  methods: {
+    getProjects() {
+      const params = [`per_page=3`, `page=1`].join("&");
+
+      this.$store
+        .dispatch("getData", ["project", params])
+        .then((response) => {
+          this.projects = response.data;
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
+  },
+  components: { Pagination },
+};
 </script>
 <template>
   <!-- Portofolio Section -->
@@ -30,25 +55,24 @@ export default { components: { Pagination } };
       >
         <div
           class="mb-12 rounded-lg px-4 shadow-lg md:w-1/3"
-          v-for="(item, index) in 4"
+          v-for="(project, index) in projects"
           :key="index"
         >
           <div class="overflow-hidden rounded-md shadow-md">
             <img
-              src="../../assets/images/siakad.jpg"
+              :src="project.documents[0].documentPath"
               alt="Siakad"
               class="w-full"
             />
           </div>
-          <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">
-            Siakad Project
-          </h3>
-          <p class="mb-3 text-base font-medium text-secondary">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, esse
-            temporibus numquam atque vel magni deserunt ea maxime quae saepe
-            dolore voluptatibus libero dolor quas, veritatis eveniet vero cumque
-            unde?
-          </p>
+          <h3
+            class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white"
+            v-html="project.projectName"
+          ></h3>
+          <p
+            class="mb-3 text-base font-medium text-secondary"
+            v-html="project.projectDescription"
+          ></p>
         </div>
       </div>
 
