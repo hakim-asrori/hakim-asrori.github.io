@@ -137,7 +137,7 @@ export default {};
         </div>
 
         <p class="text-center text-xs font-medium text-slate-500">
-          Dibuat dengan <span class="text-pink-500">❤️</span> oleh
+          Built With <span class="text-pink-500">❤️</span> By
           <a href="" class="font-bold text-primary">Hakim Asrori</a>
         </p>
       </div>

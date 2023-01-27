@@ -10,7 +10,7 @@ export default { components: { CloudShapeIcon } };
       <div class="flex flex-wrap xl:mx-auto xl:w-10/12">
         <div class="w-full self-center px-4 lg:w-1/2">
           <h1 class="mb-5 text-base font-semibold text-primary md:text-xl">
-            Halo Semua 👋, Saya
+            Hello 👋, I'm
             <span
               class="mt-1 block text-4xl font-bold text-dark dark:text-white lg:text-5xl"
               >Hakim Asrori</span
@@ -18,22 +18,20 @@ export default { components: { CloudShapeIcon } };
           </h1>
 
           <h2 class="mb-5 text-lg font-medium text-secondary">
-            Student & Backend Developer
+            Student & Web Developer
           </h2>
 
           <p
             class="mb-10 text-justify font-medium leading-relaxed text-secondary"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            quibusdam vel cupiditate quo consequuntur assumenda voluptate sit
-            quos ipsum! Nam ab repellendus illo voluptas facilis porro ullam
-            minus nihil impedit.
+            I am a Web Developer with a high enthusiast of Laravel, VueJS and
+            Testing.
           </p>
 
           <a
             href="#"
             class="text-bold rounded-full bg-primary py-3 px-8 font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
-            >Hubungi Saya</a
+            >Contact Me</a
           >
         </div>
         <div class="w-full self-end px-4 lg:w-1/2">

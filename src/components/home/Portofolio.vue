@@ -6,6 +6,7 @@ export default {
   data() {
     return {
       projects: [],
+      pagination: {},
 
       isLoading: false,
     };
@@ -15,20 +16,20 @@ export default {
   },
   methods: {
     getProjects() {
-      this.isLoading = true;
-
-      const params = [`per_page=3`, `page=1`].join("&");
-
-      this.$store
-        .dispatch("getData", ["project", params])
-        .then((response) => {
-          this.isLoading = false;
-          this.projects = response.data;
-        })
-        .catch((error) => {
-          this.isLoading = false;
-          console.log(error);
-        });
+      this.projects = [
+        {
+          projectName: "Rumah Tahfidz Qur'an",
+          projectImage: "/src/assets/images/RTQ.png",
+        },
+        {
+          projectName: "Roketin Support System",
+          projectImage: "/src/assets/images/RSS.png",
+        },
+        {
+          projectName: "Administrasi Griya Jambudipa",
+          projectImage: "/src/assets/images/AGJ.png",
+        },
+      ];
     },
   },
   components: { Pagination, Loader },
@@ -41,50 +42,33 @@ export default {
       <div class="w-full px-4">
         <div class="mx-auto mb-16 max-w-xl text-center">
           <h4 class="mb-2 text-lg font-semibold uppercase text-primary">
-            Portofolio
+            PORTFOLIO
           </h4>
           <h2
             class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl"
           >
-            Project Terbaru
+            Projects
           </h2>
-          <p class="text-md font-medium text-secondary md:text-lg">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta
-            reprehenderit excepturi cupiditate eligendi ratione reiciendis
-            expedita nulla eos magnam quasi. Doloribus soluta saepe repudiandae
-            aperiam quidem tempora id dolor debitis.
-          </p>
         </div>
       </div>
 
       <div
         class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12"
       >
-        <Loader v-if="isLoading" />
         <div
-          class="mb-12 rounded-lg px-4 shadow-lg md:w-1/3"
+          class="mx-5 mb-12 rounded-lg px-4 shadow-lg hover:shadow-xl md:w-96"
           v-for="(project, index) in projects"
           :key="index"
         >
-          <div class="overflow-hidden rounded-md shadow-md">
-            <img
-              :src="project.documents[0].documentPath"
-              alt="Siakad"
-              class="w-full"
-            />
+          <div class="mt-2 overflow-hidden rounded-md shadow-md">
+            <img :src="project.projectImage" alt="Siakad" class="w-full" />
           </div>
           <h3
-            class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white"
+            class="mt-5 mb-3 text-center text-xl font-semibold text-dark dark:text-white"
             v-html="project.projectName"
           ></h3>
-          <p
-            class="mb-3 text-base font-medium text-secondary"
-            v-html="project.projectDescription"
-          ></p>
         </div>
       </div>
-
-      <Pagination />
     </div>
   </section>
   <!-- End Portofolio Section -->
