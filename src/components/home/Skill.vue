@@ -16,7 +16,7 @@ export default {
     getSkills() {
       this.isLoading = true;
       axios
-        .get("/src/assets/data/skills.json")
+        .get("/assets/data/skills.json")
         .then((response) => {
           this.isLoading = false;
           this.skills = response.data.map((skill) => {
@@ -53,7 +53,7 @@ export default {
 
       <div class="flex flex-wrap xl:mx-auto xl:w-10/12">
         <div
-          class="w-full p-4 hover:shadow-lg lg:w-1/4 xl:mx-auto"
+          class="xs:w-1/2 w-full p-4 hover:shadow-lg sm:w-1/2 md:w-1/3 lg:w-1/4 xl:mx-auto"
           v-for="(skill, index) in skills"
           :key="index"
         >

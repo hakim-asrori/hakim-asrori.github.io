@@ -19,15 +19,15 @@ export default {
       this.projects = [
         {
           projectName: "Rumah Tahfidz Qur'an",
-          projectImage: "/src/assets/images/RTQ.png",
+          projectImage: "/assets/images/RTQ.png",
         },
         {
           projectName: "Roketin Support System",
-          projectImage: "/src/assets/images/RSS.png",
+          projectImage: "/assets/images/RSS.png",
         },
         {
           projectName: "Administrasi Griya Jambudipa",
-          projectImage: "/src/assets/images/AGJ.png",
+          projectImage: "/assets/images/AGJ.png",
         },
       ];
     },
