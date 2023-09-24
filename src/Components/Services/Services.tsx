@@ -18,7 +18,9 @@ const Services = () => {
         
         <span>Services</span>
         
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> consectetur enim voluptates cupiditate ut voluptate illum, fugit fuga?</span>
+        <span>
+          I am experienced in utilizing various tools and technologies <br /> to optimize web application performance and ensuring high-quality code.
+        </span>
         
         <button className="button s-button">Download CV</button>
 
@@ -26,15 +28,15 @@ const Services = () => {
       </div>
       <div className="cards">
         <motion.div whileInView={{ left: "14rem" }} initial={{ left: "25rem" }} transition={transition} style={{ left: "14rem" }}>
-          <Card emoji={HeartEmoji} heading={"Design"} detail={"Figma, Sketch, Photoshop, CorelDraw"} />
+          <Card emoji={HeartEmoji} heading={"Frontend Developer"} detail={"HTML, CSS, Javascript, Vue JS, and React JS"} />
         </motion.div>
         
         <motion.div initial={{ left: "-36%" }} whileInView={{ left: "-4rem" }} transition={transition} style={{ left: "-4rem", top: "12rem" }}>
-          <Card emoji={Glasses} heading={"Developer"} detail={"Html, Css, JavaScript, React, Laravel"} />
+          <Card emoji={Glasses} heading={"Backend Developer"} detail={"JavaScript, PHP, Laravel, CodeIgniter, and MySQL "} />
         </motion.div>
         
         <motion.div whileInView={{ left: "12rem" }} initial={{ left: "25rem" }} transition={transition} style={{ left: "12rem", top: "19rem" }}>
-          <Card emoji={Humble} heading={"UI/UX"} detail={"Html, Css, JavaScript, React, Laravel"} />
+          <Card emoji={Humble} heading={"Others"} detail={"Git, Figma, Arduino, JQuery, Express JS, and Flutter"} />
         </motion.div>
 
         <div className="blur s-blur2" style={{ background: "var(--purple)" }}></div>

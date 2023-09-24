@@ -18,6 +18,11 @@
   color: white;
 }
 
+.f-content a {
+  text-decoration: none;
+  color: white;
+}
+
 .f-icons {
   display: flex;
   gap: 2rem;

@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 
 import './Works.css'
 
-import Upwork from "../../assets/img/Upwork.png"
-import Fiverr from "../../assets/img/fiverr.png"
-import Amazon from "../../assets/img/amazon.png"
-import Shopify from "../../assets/img/Shopify.png"
-import Facebook from "../../assets/img/Facebook.png"
+import Arahan from "../../assets/img/arahan.png"
+import RTQ from "../../assets/img/rtq.png"
+import Teras from "../../assets/img/teras.png"
+import Skalapehnangka from "../../assets/img/skalapehnangka.png"
+import Himatif from "../../assets/img/himatif.png"
 
 const Works = () => {
   return (
@@ -18,10 +18,6 @@ const Works = () => {
         <span>Brands & Clients</span>
         
         <span>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> 
-          consectetur enim voluptates cupiditate ut voluptate illum, fugit fuga? <br /> 
-          consectetur enim voluptates cupiditate ut voluptate illum, fugit fuga? <br /> 
-          consectetur enim voluptates cupiditate ut voluptate illum, fugit fuga? <br /> 
         </span>
         
         <button className="button s-button">Hire Me</button>
@@ -32,19 +28,19 @@ const Works = () => {
       <div className="w-right">
         <motion.div initial={{ rotate: 45 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 3.5, type: 'spring' }} className="w-mainCircle">
           <div className="w-secCircle">
-            <img src={Upwork} alt="" />
+            <img src={Arahan} alt="" height={150} />
           </div>
           <div className="w-secCircle">
-            <img src={Fiverr} alt="" />
+            <img src={RTQ} alt="" height={80} />
           </div>
           <div className="w-secCircle">
-            <img src={Amazon} alt="" />
+            <img src={Teras} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Shopify} alt="" />
+            <img src={Skalapehnangka} alt="" height={150} />
           </div>
           <div className="w-secCircle">
-            <img src={Facebook} alt="" />
+            <img src={Himatif} alt="" height={150} />
           </div>
         </motion.div>
 

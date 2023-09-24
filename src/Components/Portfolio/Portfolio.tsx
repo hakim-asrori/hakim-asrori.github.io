@@ -4,10 +4,10 @@ import {Swiper, SwiperSlide} from 'swiper/react'
 import "./Portfolio.css"
 import "swiper/css"
 
-import Sidebar from "../../assets/img/sidebar.png"
-import Ecommerce from "../../assets/img/ecommerce.png"
-import HOC from "../../assets/img/hoc.png"
-import MusicApp from "../../assets/img/musicapp.png"
+import Skalapehnangka from "../../assets/img/web-skalpehnangka.png"
+import RTQ from "../../assets/img/web-rumah-tahfidz-quran.png"
+import Silihin from "../../assets/img/web-silihin.png"
+import SupportSystem from "../../assets/img/web-support-system.png"
 
 const Portfolio = () => {
   return (
@@ -28,16 +28,16 @@ const Portfolio = () => {
         className="portfolio-slider"
       >
         <SwiperSlide>
-          <img src={Sidebar} alt="" />
+          <img src={Skalapehnangka} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Ecommerce} alt="" />
+          <img src={RTQ} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={HOC} alt="" />
+          <img src={Silihin} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={MusicApp} alt="" />
+          <img src={SupportSystem} alt="" />
         </SwiperSlide>
       </Swiper>
     </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import Instagram from "@iconscout/react-unicons/icons/uil-instagram"
 import Facebook from "@iconscout/react-unicons/icons/uil-facebook"
+import LinkedIn from "@iconscout/react-unicons/icons/uil-linkedin"
 import Github from "@iconscout/react-unicons/icons/uil-github"
 
 import "./Footer.css"
@@ -13,11 +14,17 @@ const Footer = () => {
       <img src={Wave} alt="" style={{ width: "100%" }} />
 
       <div className="f-content">
-        <span>hakimasrori24@gmail.com</span>
+        <span><a href="mailto:hakimasrori24@gmail.com">hakimasrori24@gmail.com</a></span>
         <div className="f-icons">
-          <Instagram color="white" size="3rem" />
-          <Facebook color="white" size="3rem" />
-          <Github color="white" size="3rem" />
+          <a href="https://www.instagram.com/asrorihakim/" target="_blank">
+            <Instagram color="white" size="3rem" />
+          </a>
+          <a href="https://www.linkedin.com/in/hakim-asrori-2b42aa217/" target="_blank">
+            <LinkedIn color="white" size="3rem" />
+          </a>
+          <a href="https://github.com/hakim-asrori" target="_blank">
+            <Github color="white" size="3rem" />
+          </a>
         </div>
       </div>
     </div>
