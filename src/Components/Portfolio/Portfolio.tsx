@@ -8,6 +8,8 @@ import Skalapehnangka from "../../assets/img/web-skalpehnangka.png"
 import RTQ from "../../assets/img/web-rumah-tahfidz-quran.png"
 import Silihin from "../../assets/img/web-silihin.png"
 import SupportSystem from "../../assets/img/web-support-system.png"
+import Smartfarm from "../../assets/img/smartfarm.png"
+import Alkademi from "../../assets/img/alkademi.png"
 
 const Portfolio = () => {
   return (
@@ -27,6 +29,12 @@ const Portfolio = () => {
         }}
         className="portfolio-slider"
       >
+        <SwiperSlide>
+          <img src={Smartfarm} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={Alkademi} alt="" />
+        </SwiperSlide>
         <SwiperSlide>
           <img src={Skalapehnangka} alt="" />
         </SwiperSlide>

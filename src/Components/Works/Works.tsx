@@ -9,7 +9,12 @@ import Teras from "../../assets/img/teras.png"
 import Skalapehnangka from "../../assets/img/skalapehnangka.png"
 import Himatif from "../../assets/img/himatif.png"
 
+
 const Works = () => {
+  function onRedirect() {
+    window.location.href = '/src/assets/files/tigin.pdf'
+  }
+  
   return (
     <div className="works">
       <div className="awesome">
@@ -20,7 +25,7 @@ const Works = () => {
         <span>
         </span>
         
-        <button className="button s-button">Hire Me</button>
+        <button className="button s-button" onClick={onRedirect}>Hire Me</button>
 
         <div className="blur s-blur1" style={{ background: "#abf1ff94" }}></div>
       </div>
