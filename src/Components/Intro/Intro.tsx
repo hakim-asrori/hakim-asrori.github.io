@@ -52,19 +52,19 @@ const Intro = () => {
         </div>
       </div>
       <div className="i-right">
-        <img src={Vector1} alt="" />
-        <img src={Vector2} alt="" />
-        <img src={MyPicture} alt="" />
-        <motion.img initial={{ left: "-36%" }} whileInView={{ left: "-24%" }} transition={transition} src={Glassesimoji} alt="" />
-        <motion.div className="floating-div" initial={{ top: "-4%", left: "74%" }} whileInView={{ left: "68%" }} transition={transition} style={{ top: '-4%', left: '68%' }}>
+        <img src={Vector1} alt="" style={{ zIndex: 3 }} />
+        <img src={Vector2} alt="" style={{ zIndex: 3 }} />
+        <img src={MyPicture} alt="" style={{ zIndex: 3 }} />
+        <motion.img initial={{ left: "-36%" }} whileInView={{ left: "-24%" }} transition={transition} src={Glassesimoji} alt="" style={{ zIndex: 4 }} />
+        <motion.div className="floating-div" initial={{ top: "-4%", left: "74%" }} whileInView={{ left: "68%" }} transition={transition} style={{ top: '-4%', left: '68%', zIndex: 4 }}>
           <FloatingDiv image={Crown} txt1="Backend" txt2="Developer" />
         </motion.div>
-        <motion.div className="floating-div" initial={{ left: "9rem", top: "18rem" }} whileInView={{ left: "0rem" }} transition={transition} style={{ top: '18rem', left: '0rem' }}>
+        <motion.div className="floating-div" initial={{ left: "9rem", top: "18rem" }} whileInView={{ left: "0rem" }} transition={transition} style={{ top: '18rem', left: '0rem', zIndex: 4 }}>
           <FloatingDiv image={Thumbup} txt1="Frontend" txt2="Developer" />
         </motion.div>
 
-        <div className="blur" style={{ background: "rgba(238 210 255)" }}></div>
-        <div className="blur" style={{ background: "#C1F5FF", top: "17rem", width: "21rem", height: "11rem", left: "-9rem" }}></div>
+        <div className="blur" style={{ background: "rgba(238 210 255)", zIndex: 1 }}></div>
+        <div className="blur" style={{ background: "#C1F5FF", top: "17rem", width: "21rem", height: "11rem", left: "-9rem", zIndex: 1 }}></div>
       </div>
     </div>
   );

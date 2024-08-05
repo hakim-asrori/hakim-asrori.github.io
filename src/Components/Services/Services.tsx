@@ -28,22 +28,22 @@ const Services = () => {
 
         <button onClick={redirect} className="button s-button">Download CV</button>
 
-        <div className="blur s-blur1" style={{ background: "#abf1ff94" }}></div>
+        <div className="blur s-blur1" style={{ background: "#abf1ff94", zIndex: 3 }}></div>
       </div>
       <div className="cards">
-        <motion.div whileInView={{ left: "14rem" }} initial={{ left: "25rem" }} transition={transition} style={{ left: "14rem" }}>
+        <motion.div whileInView={{ left: "14rem" }} initial={{ left: "25rem" }} transition={transition} style={{ left: "14rem", zIndex: 4 }}>
           <Card emoji={HeartEmoji} heading={"Frontend Developer"} detail={"HTML, CSS, Javascript, Vue JS, and React JS"} />
         </motion.div>
 
-        <motion.div initial={{ left: "-36%" }} whileInView={{ left: "-4rem" }} transition={transition} style={{ left: "-4rem", top: "12rem" }}>
+        <motion.div initial={{ left: "-36%" }} whileInView={{ left: "-4rem" }} transition={transition} style={{ left: "-4rem", top: "12rem", zIndex: 4 }}>
           <Card emoji={Glasses} heading={"Backend Developer"} detail={"JavaScript, PHP, Laravel, CodeIgniter, and MySQL "} />
         </motion.div>
 
-        <motion.div whileInView={{ left: "12rem" }} initial={{ left: "25rem" }} transition={transition} style={{ left: "12rem", top: "19rem" }}>
+        <motion.div whileInView={{ left: "12rem" }} initial={{ left: "25rem" }} transition={transition} style={{ left: "12rem", top: "19rem", zIndex: 4 }}>
           <Card emoji={Humble} heading={"Others"} detail={"Git, Figma, Arduino, JQuery, Express JS, and Flutter"} />
         </motion.div>
 
-        <div className="blur s-blur2" style={{ background: "var(--purple)" }}></div>
+        <div className="blur s-blur2" style={{ background: "var(--purple)", zIndex: 3 }}></div>
       </div>
     </div>
   )

@@ -11,17 +11,17 @@ const Experience = () => {
 
   return (
     <div className="experiance" id='experience'>
-      <div className="achievement">
+      <div className="achievement" style={{ zIndex: 4 }}>
         <div className="circle">{experienceYear}+</div>
         <span>years </span>
         <span>Experiance</span>
       </div>
-      <div className="achievement">
+      <div className="achievement" style={{ zIndex: 4 }}>
         <div className="circle">19+</div>
         <span>completed </span>
         <span>Projects</span>
       </div>
-      <div className="achievement">
+      <div className="achievement" style={{ zIndex: 4 }}>
         <div className="circle">1</div>
         <span>companies </span>
         <span>Work</span>

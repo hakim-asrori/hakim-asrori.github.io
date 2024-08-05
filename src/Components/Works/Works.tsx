@@ -14,15 +14,15 @@ const Works = () => {
     <div className="works">
       <div className="awesome">
         <span>Works for All these</span>
-        
+
         <span>Brands & Clients</span>
-        
+
         <span>
         </span>
-        
+
         <button className="button s-button">Hire Me</button>
 
-        <div className="blur s-blur1" style={{ background: "#abf1ff94" }}></div>
+        <div className="blur s-blur1" style={{ background: "#abf1ff94", zIndex: 3 }}></div>
       </div>
 
       <div className="w-right">
