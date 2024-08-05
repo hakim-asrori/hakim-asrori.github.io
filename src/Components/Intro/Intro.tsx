@@ -18,9 +18,13 @@ import Crown from "../../assets/img/crown.png"
 import Glassesimoji from "../../assets/img/glassesimoji.png"
 
 const Intro = () => {
-  const transition = {duration: 2, type: "spring"}
+  const transition = { duration: 2, type: "spring" }
   const theme = useContext(themeContext)
   const darkMode = theme.state.darkMode
+
+  const redirect = () => {
+    window.location.href = '/src/assets/files/Profile.pdf'
+  }
 
   return (
     <div className="intro">
@@ -33,10 +37,10 @@ const Intro = () => {
           </span>
         </div>
 
-        <button className="button i-button">Hire Me</button>
+        <button onClick={redirect} className="button i-button">Hire Me</button>
 
         <div className="i-icons">
-          <a href="https://github.com/hakim-asrori" target="_blank"> 
+          <a href="https://github.com/hakim-asrori" target="_blank">
             <img src={Github} alt="" />
           </a>
           <a href="https://www.linkedin.com/in/hakim-asrori-2b42aa217/" target="_blank">
@@ -48,19 +52,19 @@ const Intro = () => {
         </div>
       </div>
       <div className="i-right">
-          <img src={Vector1} alt="" />
-          <img src={Vector2} alt="" />
-          <img src={MyPicture} alt="" />
-          <motion.img initial={{ left: "-36%" }} whileInView={{ left: "-24%" }} transition={transition} src={Glassesimoji} alt="" />
-          <motion.div className="floating-div" initial={{ top: "-4%", left: "74%" }} whileInView={{ left: "68%" }} transition={transition} style={{ top: '-4%', left: '68%' }}>
-            <FloatingDiv image={Crown} txt1="Backend" txt2="Developer" />
-          </motion.div>
-          <motion.div className="floating-div" initial={{ left: "9rem", top: "18rem" }} whileInView={{ left: "0rem" }} transition={transition} style={{ top: '18rem', left: '0rem' }}>
-            <FloatingDiv image={Thumbup} txt1="Frontend" txt2="Developer" />
-          </motion.div>
+        <img src={Vector1} alt="" />
+        <img src={Vector2} alt="" />
+        <img src={MyPicture} alt="" />
+        <motion.img initial={{ left: "-36%" }} whileInView={{ left: "-24%" }} transition={transition} src={Glassesimoji} alt="" />
+        <motion.div className="floating-div" initial={{ top: "-4%", left: "74%" }} whileInView={{ left: "68%" }} transition={transition} style={{ top: '-4%', left: '68%' }}>
+          <FloatingDiv image={Crown} txt1="Backend" txt2="Developer" />
+        </motion.div>
+        <motion.div className="floating-div" initial={{ left: "9rem", top: "18rem" }} whileInView={{ left: "0rem" }} transition={transition} style={{ top: '18rem', left: '0rem' }}>
+          <FloatingDiv image={Thumbup} txt1="Frontend" txt2="Developer" />
+        </motion.div>
 
-          <div className="blur" style={{ background: "rgba(238 210 255)" }}></div>
-          <div className="blur" style={{ background: "#C1F5FF", top: "17rem", width: "21rem", height: "11rem", left: "-9rem" }}></div>
+        <div className="blur" style={{ background: "rgba(238 210 255)" }}></div>
+        <div className="blur" style={{ background: "#C1F5FF", top: "17rem", width: "21rem", height: "11rem", left: "-9rem" }}></div>
       </div>
     </div>
   );

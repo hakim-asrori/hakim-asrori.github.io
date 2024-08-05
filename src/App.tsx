@@ -17,9 +17,9 @@ function App() {
   const darkMode = theme.state.darkMode
 
   return (
-    <div 
+    <div
       className="App"
-      style={{ 
+      style={{
         background: darkMode ? 'black' : '',
         color: darkMode ? 'white' : ''
       }}
@@ -30,7 +30,7 @@ function App() {
       <Experience />
       <Works />
       <Portfolio />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Contact />
       <Footer />
     </div>
