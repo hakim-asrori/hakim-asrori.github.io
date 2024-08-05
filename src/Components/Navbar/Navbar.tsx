@@ -17,7 +17,7 @@ const Navbar = () => {
           <li><Link spy={true} to="services" smooth={true} >Services</Link></li>
           <li><Link spy={true} to="experience" smooth={true} >Experience</Link></li>
           <li><Link spy={true} to="portfolio" smooth={true} >Portfolio</Link></li>
-          <li><Link spy={true} to="testimonial" smooth={true} >Testimonials</Link></li>
+          {/* <li><Link spy={true} to="testimonial" smooth={true} >Testimonials</Link></li> */}
         </ul>
       </div>
       <button className="button n-button">
